@@ -1,0 +1,45 @@
+<ion-view view-title="Nueva Receta">
+  <ion-content class="">
+    <div class="list">
+      <label class="item item-input">
+        <span class="input-label">Name</span>
+        <input type="text" placeholder="" ng-model="recipe.nombre">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Description</span>
+        <textarea placeholder="" ng-model="recipe.descripcion"></textarea>
+      </label>
+      <div class="item range range-positive">
+        <span class="input-label">Difficulty</span>
+        <i class="icon ion-ios-minus"></i>
+        <input placeholder="dificultad" ng-model="recipe.difficulty" type="range" n name="volume" min="1" max="3">
+        <i class="icon ion-ios-plus"></i>
+      </div>
+      <label class="input-label">Ingredientes</label>
+      <div class="row">
+        <div class="col col-75">
+          <input type="text" ng-model="recipe.ingredientes">
+        </div>
+        <div class="col">
+          <button style="border-radius: 30px 30px 30px 30px;" class=" button button-calm ion-plus"
+                  ng-click="addIngredient(recipe.ingredientes)"></button>
+        </div>
+      </div>
+      <ul>
+        <li class="padding-bottom" ng-repeat="item in listIngredient track by $index">
+          <button class="btn button">
+            <strong>{{$index+1}}</strong>
+            {{ item}}
+            <button class="button button-assertive ion-minus-round" ng-click="removeIngredient($index)"></button>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="row">
+      <button style="border-radius: 15px 15px 15px 15px;" ng-click="save(recipe)"
+              class="button button-block button-balanced">
+        save
+      </button>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,9 @@
+<ion-view view-title="Easy Plate">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="recipe in list"  href="#/app/recipeList/{{recipe.id}}">
+        {{recipe.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

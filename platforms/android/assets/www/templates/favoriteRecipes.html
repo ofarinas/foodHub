@@ -1,0 +1,13 @@
+<ion-view view-title="My favorites recipes">
+  <ion-content>
+    <ion-list>
+      <ion ng-repeat="recipe in recipes">
+        <div ng-if="recipe.favorite=='ion-ios-star'">
+          <ion-item  href="#/app/recipeList/{{recipe.id}}">
+          {{recipe.title}}
+            </ion-item>
+        </div>
+      </ion>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,25 @@
+<ion-view view-title="FoodHub">
+  <ion-content>
+    <div class="row">
+      <div class="col col-75">
+        <label class="item item-input">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="search" ng-model="test.title" placeholder="busqueda">
+        </label>
+      </div>
+      <div class="col">
+        <button ng-click="showme=true" class="button  button-positive ">Filtrar</button>
+      </div>
+    </div>
+    <h5 ng-show="showme">Dificultad:</h5>
+    <div ng-show="showme" class="item range">
+      <b>Baja</b><input ng-show="showme"  type="range" ng-model="test.difficulty" name="difficulty" min="1" max="3"><b>Alta</b>
+    </div>
+      <button ng-show="showme"  ng-click="showme=false; updateList();" class="button button-dark button-full">Ocultar</button>
+    <ion-list>
+      <ion-item ng-repeat="recipe in recipes| filter:test"  href="#/app/recipeList/{{recipe.id}}">
+        {{recipe.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

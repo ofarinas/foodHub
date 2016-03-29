@@ -1,0 +1,29 @@
+<ion-view view-title="{{recipe.title}}">
+  <ion-content>
+      <div class="row">
+        <div class="col col-50">
+          <img style="width: 90%; height: 75%; " ng-src="{{recipe.img}}">
+        </div>
+        <div class="col col-50">
+          <button class="button icon-left {{recipe.favorite}}  button-positive" ng-click="changeIcon()">Favorites</button>
+          <!--<button class="button icon-left ion-ios-star-outline button-positive">Favorites</button>-->
+        </div>
+      </div>
+    <div class="row">
+        <h3>Descripción de la receta</h3>
+      </div>
+        <p>{{recipe.description}}</p>
+      <hr >
+     <div class="row"><h3>Ingredient</h3></div>
+      <div class="row">
+         <ul>
+           <li ng-repeat="ingredient in recipe.ingredientes">{{ingredient}}</li>
+         </ul>
+      </div>
+      <hr>
+      <div class="row"><h3>Difficulty</h3></div>
+      <div class="row">
+        <p>{{recipe.difficulty}}</p>
+      </div>
+  </ion-content>
+</ion-view>
