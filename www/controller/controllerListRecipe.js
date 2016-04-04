@@ -7,6 +7,7 @@ main.controller('controllerListRecipe', function ($scope, factoryRecipeList, $lo
     $scope.recipes = factoryRecipeList.getRecipe();
   };
   $scope.reset = function() {
-    $scope.test.difficulty = 1;
+
+    $scope.test = angular.reset();
   };
 });
