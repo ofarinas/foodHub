@@ -31,9 +31,6 @@ main.controller('controllerCreateRecipe', function ($scope, factoryRecipeList, $
     $localstorage.setObject("listMyRecipe", listaRecetas);
     cleanCreateRecipe($scope);
     $ionicViewService.nextViewOptions({disableBack: true});
-    //$state.reload();
-    //$window.location.reload();
-    //$state.go("app.myListRecipe", {}, {reload: true});
   };
 });
 function cleanCreateRecipe($scope) {
