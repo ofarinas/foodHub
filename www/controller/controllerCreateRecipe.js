@@ -15,9 +15,10 @@ main.controller('controllerCreateRecipe', function ($scope, factoryRecipeList, $
       destinationType: Camera.DestinationType.DATA_URL,
       sourceType: Camera.PictureSourceType.CAMERA,
       //allowEdit: true,
+      quality:100,
       encodingType: Camera.EncodingType.JPEG,
-      targetWidth: 100,
-      targetHeight: 100,
+      targetWidth: 400,
+      targetHeight: 400,
       popoverOptions: CameraPopoverOptions,
       saveToPhotoAlbum: true,
       correctOrientation:true
@@ -48,7 +49,8 @@ main.controller('controllerCreateRecipe', function ($scope, factoryRecipeList, $
       title: recipe.nombre,
       ingredientes: $scope.listIngredient,
       description: recipe.descripcion,
-      difficulty: recipe.difficulty
+      difficulty: recipe.difficulty,
+      img:$scope.pictureUrl
     });
 
     $localstorage.setObject("listMyRecipe", listaRecetas);
@@ -61,4 +63,5 @@ function cleanCreateRecipe($scope) {
   $scope.recipe.ingredientes = "";
   $scope.recipe.nombre = "";
   $scope.listIngredient = [];
+  $scope.pictureUrl="";
 }
