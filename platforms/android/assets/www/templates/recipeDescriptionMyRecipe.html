@@ -5,6 +5,16 @@
       </div>
         <p>{{recipe.description}}</p>
       <hr>
+    <div class="list card">
+      <div style="height: 400px;" class="item item-image">
+        <img  src="{{recipe.img}}" >
+      </div>
+      <a ng-click="mensaje();" class="item item-icon-left assertive">
+        <i class="ion-ios-camera-outline"></i>
+        take photo
+      </a>
+
+    </div>
      <div class="row"><h3>Ingredient</h3></div>
       <div class="row">
          <ul>

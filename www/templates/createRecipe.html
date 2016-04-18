@@ -9,6 +9,16 @@
         <span class="input-label">Description</span>
         <textarea placeholder="" ng-model="recipe.descripcion"></textarea>
       </label>
+      <div class="list card">
+        <div style="height: 400px;" class="item item-image">
+          <img  src="{{pictureUrl}}" >
+        </div>
+        <a ng-click="mensaje();" class="item item-icon-left assertive">
+          <i class="ion-ios-camera-outline"></i>
+          take photo
+        </a>
+
+     </div>
       <div class="item range range-positive">
         <span class="input-label">Difficulty</span>
         <i class="icon ion-ios-minus"></i>
