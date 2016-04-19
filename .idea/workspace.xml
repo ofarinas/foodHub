@@ -4,10 +4,6 @@
     <list default="true" id="c521dd10-8d83-4648-8e6f-a811e0a604f3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/controller/controllerCreateDiet.js" afterPath="$PROJECT_DIR$/www/controller/controllerCreateDiet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/app.js" afterPath="$PROJECT_DIR$/www/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/createDiet.html" afterPath="$PROJECT_DIR$/www/templates/createDiet.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/menu.html" afterPath="$PROJECT_DIR$/www/templates/menu.html" />
     </list>
     <ignored path="app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,21 +34,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllerCreateDiet.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="controllerCreateDiet.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/controller/controllerCreateDiet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
+            <state vertical-scroll-proportion="1.0344827">
+              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createDiet.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="createDiet.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/templates/createDiet.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.408867">
-              <caret line="20" column="67" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="67" />
+            <state vertical-scroll-proportion="-3.4482758">
+              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -99,8 +95,8 @@
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/js/app.js" />
         <option value="$PROJECT_DIR$/www/templates/menu.html" />
-        <option value="$PROJECT_DIR$/www/controller/controllerCreateDiet.js" />
         <option value="$PROJECT_DIR$/www/templates/createDiet.html" />
+        <option value="$PROJECT_DIR$/www/controller/controllerCreateDiet.js" />
       </list>
     </option>
   </component>
@@ -357,7 +353,13 @@
       <option name="project" value="LOCAL" />
       <updated>1460979576208</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="create my own diet">
+      <created>1461063584792</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1461063584792</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -376,6 +378,7 @@
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17965023" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25164112" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.49578503" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32575756" sideWeight="0.5200211" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3894967" sideWeight="0.48504272" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -384,7 +387,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.49578503" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -428,7 +430,8 @@
     <MESSAGE value="refactoring contollerListrecipe" />
     <MESSAGE value="add plugin  $cordova camare" />
     <MESSAGE value="starting to make create diet" />
-    <option name="LAST_COMMIT_MESSAGE" value="starting to make create diet" />
+    <MESSAGE value="create my own diet" />
+    <option name="LAST_COMMIT_MESSAGE" value="create my own diet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -789,18 +792,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/controller/controllerCreateDiet.js">
+    <entry file="file://$PROJECT_DIR$/www/templates/createDiet.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
+        <state vertical-scroll-proportion="-3.4482758">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/createDiet.html">
+    <entry file="file://$PROJECT_DIR$/www/controller/controllerCreateDiet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.408867">
-          <caret line="20" column="67" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="67" />
+        <state vertical-scroll-proportion="1.0344827">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
           <folding />
         </state>
       </provider>
