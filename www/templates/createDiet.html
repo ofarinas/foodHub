@@ -18,8 +18,7 @@
       <label class="input-label">Recetas</label>
       <div class="row">
         <div class="col col-75">
-          <select ng-model="selectedRecipe">
-            <option value="{{value.id}}" ng-repeat=" value in diet.listRecipe">{{value.title}}</option>
+          <select ng-model="diet.selectedRecipe" ng-options="value.title for value in diet.listRecipe">
           </select>
 
         </div>
@@ -29,7 +28,7 @@
         </div>
       </div>
       <ul>
-        <li class="padding-bottom" ng-repeat="item in listSelectingRecipeName track by $index">
+        <li class="padding-bottom" ng-repeat="item in diet.listSelectingRecipeName track by $index">
           <button class="btn button">
             <strong>{{$index+1}}</strong>
             {{ item}}

@@ -10,8 +10,8 @@ main.controller('controllerCreateDiet', function ($scope, factoryRecipeList, $lo
   $scope.diet.listSelectingRecipeName = [];
   $scope.diet.listSelectingRecipeId = [];
   $scope.addRecipe = function () {
-    $scope.diet.listSelectingRecipeName.push(angular.copy($scope.diet.recipe.title));
-    $scope.diet.listSelectingRecipeId.push(angular.copy($scope.diet.recipe.id));
+    $scope.diet.listSelectingRecipeName.push(angular.copy($scope.diet.selectedRecipe.title));
+    $scope.diet.listSelectingRecipeId.push(angular.copy($scope.diet.selectedRecipe.id));
   };
   $scope.removeIngredient = function (index) {
     delete $scope.diet.listSelectingRecipeName.splice(index, 1);
@@ -38,6 +38,8 @@ main.controller('controllerCreateDiet', function ($scope, factoryRecipeList, $lo
 function cleanCreateRecipe($scope) {
   $scope.diet.descripcion = "";
   $scope.diet.nombre = "";
+  $scope.diet.listRecipe=[];
   $scope.diet.listSelectingRecipeName = [];
   $scope.diet.listSelectingRecipeId = [];
+  $scope.diet.selectedRecipe=$scope.diet.listRecipe[0].title;
 }
