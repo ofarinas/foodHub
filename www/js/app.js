@@ -113,7 +113,28 @@ main
         controller: 'controllerRecipe'
       }
     }
-  });
+  })
+
+  .state('app.dietDescription', {
+    url: '/dietDescription/:id',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/dietDescription.html',
+        controller: 'controllerDiet'
+      }
+    },
+  })
+
+  .state('app.dietList', {
+    url: '/dietList',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/dietList.html',
+        controller: 'controllerListDiet'
+      }
+    }
+  })
+  ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/recipeList');
 });

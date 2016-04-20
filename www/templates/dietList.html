@@ -1,0 +1,9 @@
+<ion-view view-title="Dietas">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="diet in diets" href="#/app/dietDescription/{{diet.id}}">
+        {{diet.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

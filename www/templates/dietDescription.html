@@ -1,0 +1,17 @@
+<ion-view view-title="{{diet.title}}">
+  <ion-content>
+    <div class="row">
+        <h3>Descripción de la dieta</h3>
+      </div>
+        <p>{{diet.description}}</p>
+      <hr>
+     <div class="row"><h3>Recetas para seguir la dieta</h3></div>
+      <div class="row">
+         <ul>
+           <li ng-repeat="receta in diet.recetas">
+             {{recipes.find(receta).title}}
+           </li>
+         </ul>
+      </div>
+  </ion-content>
+</ion-view>
