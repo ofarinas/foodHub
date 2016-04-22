@@ -86,6 +86,15 @@ main
         }
       }
     })
+    .state('app.createDiet', {
+      url: '/createDiet',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/createDiet.html',
+          controller: 'controllerCreateDiet'
+        }
+      }
+    })
     .state('app.myRecipe', {
       url: '/myRecipe/:id',
       views: {
