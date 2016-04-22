@@ -6,12 +6,10 @@
         <p>{{diet.description}}</p>
       <hr>
      <div class="row"><h3>Recetas para seguir la dieta</h3></div>
-      <div class="row">
-         <ul>
-           <li ng-repeat="receta in diet.recetas">
-             {{recipes.find(receta).title}}
-           </li>
-         </ul>
-      </div>
+        <ion-list>
+           <ion-item ng-repeat="receta in recipesDiet()"   href="#/app/recipeList/{{receta.id}}">
+             {{receta.title}}
+           </ion-item>
+         </ion-list>
   </ion-content>
 </ion-view>
