@@ -96,6 +96,16 @@ main
       }
     })
 
+    .state('app.modifyRecipe', {
+      url: '/modifyRecipe/:id',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/ModifyRecipe.html',
+          controller: 'controllerModifyRecipe'
+        }
+      }
+    })
+
   .state('app.recipe', {
     url: '/recipeList/:id',
     views: {
