@@ -16,7 +16,7 @@ main
   .factory("factoryDietList", function () {
     var list = [
       {
-        favorite:"ion-ios-star-outline",
+        favorite: "ion-ios-star-outline",
         id: 1,
         title: "Dieta Atkins",
         description: "Es una dieta baja en hidratos de carbono, ya que en la primera etapa sólo se manejan 20 g y en la segunda 25 g. Es alta en proteínas y grasas.",
@@ -24,7 +24,7 @@ main
       },
 
       {
-        favorite:"ion-ios-star-outline",
+        favorite: "ion-ios-star-outline",
         id: 2,
         title: "Dieta volumétrica",
         description: "The Volumetrics Weight Control Plan (Dieta volumétrica de control de peso) es un plan que orienta para seleccionar alimentos de baja densidad, esto es bajos en calorías por porción de alimento y de gran volumen para bajar de peso. Asimismo, estos alimentos ayudan a sentirse con saciedad.",
@@ -32,7 +32,7 @@ main
       },
 
       {
-        favorite:"ion-ios-star-outline",
+        favorite: "ion-ios-star-outline",
         id: 3,
         title: "Carb Lover",
         description: "Es un régimen de reducción de peso para aquellas personas que les encantan las pastas, el pan, el plátano y otros “carbohidratos” Mediante el consumo de “almidón resistente” que es una clase de hidrato de carbono presente en estos alimentos que actúa como fibra y utiliza las reservas de grasa del cuerpo.",
@@ -40,7 +40,7 @@ main
       },
 
       {
-        favorite:"ion-ios-star-outline",
+        favorite: "ion-ios-star-outline",
         id: 4,
         title: "Dieta detox",
         description: "Esta dieta de reducción se basa en un régimen vegetariano a base de alimentos crudos e incluye suplementos.",
@@ -48,7 +48,7 @@ main
       },
 
       {
-        favorite:"ion-ios-star-outline",
+        favorite: "ion-ios-star-outline",
         id: 5,
         title: "Dieta South Beach",
         description: "South Beach diet es una dieta baja en hidratos de carbono (no estricta), adecuada en proteínas y promueve el consumo de grasas buenas que protegen la salud cardiovascular. En esta dieta se seleccionan los alimentos que tienen hidratos de carbono en base a un índice glucémico bajo, que es una medida para controlar la glucosa en la sangre. De esta forma se controlan los arranques de hambre",
@@ -65,7 +65,26 @@ main
           if (id == list[i].id) return list[i];
         }
         return -1;
+      },
+      getRecipe: function (id) {
+        var listRecipe = [];
+        var recipe;
+        for (var i = 0; i < list.length; i++) {
+          if (id == list[i].id) {
+            recipe = list[i];
+            break;
+          }
+        }
+
+        for (var i = 0; i < recipe.recetas.length; i++) {
+          for (var j = 0; j < list.length; i++) {
+            if (i == lis[j].id)listRecipe.push(list[j])
+          }
+
+        }
+        return listRecipe;
       }
+
     };
 
   });
