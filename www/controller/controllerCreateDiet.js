@@ -35,11 +35,11 @@ main.controller('controllerCreateDiet', function ($scope, factoryRecipeList, $lo
     });
 
     $localstorage.setObject("listDiet", listDiet);
-    cleanCreateRecipe($scope);
+    cleanCreateDiet($scope);
     $ionicViewService.nextViewOptions({disableBack: true});
   };
 });
-function cleanCreateRecipe($scope) {
+function cleanCreateDiet($scope) {
   $scope.diet.descripcion = "";
   $scope.diet.nombre = "";
   $scope.diet.listRecipe = [];

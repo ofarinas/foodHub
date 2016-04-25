@@ -1,7 +1,7 @@
 <ion-view view-title="My Recipes">
   <ion-content >
-    <ion-list>
-      <ion-item ng-repeat="recipe in recipes " href="#/app/myRecipe/{{$index}}">
+    <ion-list show-delete="data.showDelete" show-reorder="data.showReorder">
+      <ion-item ng-repeat="recipe in recipes " href="#/app/myRecipe/{{$index}}" class="item-remove-animate">
         {{recipe.title}}
       </ion-item>
     </ion-list>

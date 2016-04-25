@@ -46,11 +46,11 @@ main.controller('controllerCreateRecipe', function ($scope, factoryRecipeList, $
     }
     listaRecetas.push({
       id: cont++,
-      title: recipe.nombre,
+      title: $scope.recipe.nombre,
       ingredientes: $scope.listIngredient,
-      description: recipe.descripcion,
-      difficulty: recipe.difficulty,
-      img:$scope.pictureUrl
+      description: $scope.recipe.descripcion,
+      difficulty: $scope.recipe.difficulty,
+      //img:$scope.pictureUrl
     });
 
     $localstorage.setObject("listMyRecipe", listaRecetas);
