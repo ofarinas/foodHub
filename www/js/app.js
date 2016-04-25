@@ -102,7 +102,8 @@ main
           templateUrl: 'templates/recipeDescriptionMyRecipe.html',
           controller: 'controllerMyRecipe'
         }
-      }
+      },
+      cache:false
     })
 
     .state('app.modifyRecipe', {
