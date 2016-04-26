@@ -53,7 +53,7 @@ main
         title: "Dieta South Beach",
         description: "South Beach diet es una dieta baja en hidratos de carbono (no estricta), adecuada en proteínas y promueve el consumo de grasas buenas que protegen la salud cardiovascular. En esta dieta se seleccionan los alimentos que tienen hidratos de carbono en base a un índice glucémico bajo, que es una medida para controlar la glucosa en la sangre. De esta forma se controlan los arranques de hambre",
         recetas: [8, 12, 14],
-      },
+      }
 
     ];
     return {

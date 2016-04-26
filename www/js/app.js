@@ -106,13 +106,14 @@ main
         }
       })
       .state('app.editMyDiet', {
-        url: '/editMyDiet/:index',
+        url: '/editMyDiet/:id',
         views: {
           'menuContent': {
             templateUrl: 'templates/createDiet.html',
             controller: 'controllerEditDiet'
           }
-        }
+        },
+        cache:false
       })
       .state('app.myRecipe', {
         url: '/myRecipe/:id',

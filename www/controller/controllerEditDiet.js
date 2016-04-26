@@ -5,8 +5,8 @@ var listDiet = [];
 var cont = 1;
 main.controller('controllerEditDiet', function ($scope, factoryRecipeList, $localstorage, $window, $state, $ionicViewService,$stateParams,factoryDietList) {
 
-  var index= $stateParams.index;
- var diet=$localstorage.getObject("listDiet")[0];
+  var index= $stateParams.id;
+ var diet=$localstorage.getObject("listDiet")[index];
   $scope.index=0;
   $scope.diet = {};
   $scope.diet.difficulty = 2;

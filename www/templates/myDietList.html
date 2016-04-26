@@ -2,7 +2,7 @@
   <ion-content ng-controller="controllerMyDietList">
     <ion-list show-delete="data.showDelete" show-reorder="data.showReorder">
 
-      <ion-item ng-repeat="item in dietas"
+      <ion-item ng-repeat="item in dietas track by $index"
                 item="item"
                 href="#/app/MyDietDescription/{{item.id}}" class="item-remove-animate">
         {{ item.title }}
@@ -13,7 +13,7 @@
                            ng-click="onItemDelete(item)">
           remove
         </ion-option-button>
-        <ion-option-button class="button-calm" ui-sref="app.editMyDiet({id:item.id})">
+        <ion-option-button class="button-calm" ui-sref="app.editMyDiet({id:$index})">
           Edit
         </ion-option-button>
         <ion-reorder-button class="ion-navicon" on-reorder="moveItem(item, $fromIndex, $toIndex)"></ion-reorder-button>
