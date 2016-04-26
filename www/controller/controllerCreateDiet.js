@@ -42,10 +42,10 @@ main.controller('controllerCreateDiet', function ($scope, factoryRecipeList, $lo
 function cleanCreateDiet($scope) {
   $scope.diet.descripcion = "";
   $scope.diet.nombre = "";
-  $scope.diet.listRecipe = [];
+  //$scope.diet.listRecipe = [];
   $scope.diet.listSelectingRecipeName = [];
   $scope.diet.listSelectingRecipeId = [];
-  $scope.diet.selectedRecipe = $scope.diet.listRecipe[0].title;
+  //$scope.diet.selectedRecipe = $scope.diet.listRecipe[0].title;
 }
 function findRecipe($scope) {
   for (var i = 0; i < $scope.diet.listSelectingRecipeId.length; i++) {
