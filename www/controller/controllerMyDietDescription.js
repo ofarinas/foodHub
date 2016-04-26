@@ -1,11 +1,11 @@
 main.controller('controllerMyDietDescription', function ($scope,factoryDietList,factoryRecipeList, $localstorage,$stateParams) {
-  var id = $stateParams.id;
-  $scope.dieta = find($localstorage.getObject("listDiet"),id);
+  var index = $stateParams.id;
+  $scope.diet =$localstorage.getObject("listDiet")[index];
   $scope.recipes = factoryRecipeList.getRecipe();
   $scope.recipesDiet = function () {
     var recipeList = [];
-    for(var i = 0; i < $scope.dieta.recetas.length; i++){
-      var recipe = factoryRecipeList.find($scope.dieta.recetas[i]);
+    for(var i = 0; i < $scope.diet.recetas.length; i++){
+      var recipe = factoryRecipeList.find($scope.diet.recetas[i]);
       recipeList.push(recipe);
     }
     return recipeList;

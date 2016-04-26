@@ -163,7 +163,8 @@ main
             templateUrl: 'templates/dietDescription.html',
             controller: 'controllerMyDietDescription'
           }
-        }
+        },
+        cache:false
 
       })
 

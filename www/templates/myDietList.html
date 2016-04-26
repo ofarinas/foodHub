@@ -4,7 +4,7 @@
 
       <ion-item ng-repeat="item in dietas track by $index"
                 item="item"
-                href="#/app/MyDietDescription/{{item.id}}" class="item-remove-animate">
+                href="#/app/MyDietDescription/{{$index}}" class="item-remove-animate">
         {{ item.title }}
         <ion-delete-button class="ion-minus-circled"
                            ng-click="onItemDelete(item)">
