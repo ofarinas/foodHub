@@ -4,7 +4,7 @@
 
       <ion-item ng-repeat="item in recipes"
                 item="item"
-                href="#/app/myRecipe/{{recipe.id}}" class="item-remove-animate">
+                href="#/app/myRecipe/{{item.id}}" class="item-remove-animate">
          {{ item.title }}
         <ion-delete-button class="ion-minus-circled"
                            ng-click="onItemDelete(item)">
@@ -13,8 +13,9 @@
                            ng-click="onItemDelete(item)">
           remove
         </ion-option-button>
+
         <ion-option-button class="button-calm"
-                           ng-click="share(item)">
+                           ui-sref="app.modifyRecipe({id : item.id})">
           Edit
         </ion-option-button>
         <ion-reorder-button class="ion-navicon" on-reorder="moveItem(item, $fromIndex, $toIndex)"></ion-reorder-button>

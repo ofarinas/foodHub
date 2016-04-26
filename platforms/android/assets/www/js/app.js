@@ -102,6 +102,17 @@ main
           templateUrl: 'templates/recipeDescriptionMyRecipe.html',
           controller: 'controllerMyRecipe'
         }
+      },
+      cache:false
+    })
+
+    .state('app.modifyRecipe', {
+      url: '/modifyRecipe/:id',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/modifyRecipe.html',
+          controller: 'controllerModifyRecipe'
+        }
       }
     })
 

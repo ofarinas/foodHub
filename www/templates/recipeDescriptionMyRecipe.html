@@ -13,7 +13,6 @@
         <i class="ion-ios-camera-outline"></i>
         take photo
       </a>
-
     </div>
      <div class="row"><h3>Ingredient</h3></div>
       <div class="row">
@@ -28,9 +27,9 @@
       </div>
       <div class="row">
         <div class="col col-50">
-          <form action=#/app/myRecipe">
-            <button class="button icon-left button-positive">Modificar</button>
-          </form>
+          <a href=#/app/modifyRecipe/{{recipe.id}}">
+            <button  class="button icon-left button-positive">Modificar</button>
+          </a>
           <!--<button class="button icon-left ion-ios-star-outline button-positive">Favorites</button>-->
         </div>
       </div>

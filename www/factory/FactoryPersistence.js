@@ -1,5 +1,20 @@
 main.factory('$localstorage', function($window,$rootScope ) {
+  //angular.element($window).on('storage', function(event) {
+  //  if (event.key === 'listMyRecipe') {
+  //    $rootScope.$apply();
+  //  }
+  //});
+  var id = 1;
   return {
+
+    getId : function () {
+      return id;
+    },
+
+    increaseId : function () {
+      id++;
+    },
+
     set: function(key, value) {
       $window.localStorage[key] = value;
 
