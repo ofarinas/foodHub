@@ -10,11 +10,11 @@ main.controller('controllerCreateDiet', function ($scope, factoryRecipeList, $lo
   $scope.diet.listSelectingRecipeName = [];
   $scope.diet.listSelectingRecipeId = [];
 
-
   $scope.addRecipe = function () {
-    if (findRecipe($scope))
+    if (findRecipe($scope)) {
       $scope.diet.listSelectingRecipeName.push(angular.copy($scope.diet.selectedRecipe.title));
-    $scope.diet.listSelectingRecipeId.push(angular.copy($scope.diet.selectedRecipe.id));
+      $scope.diet.listSelectingRecipeId.push(angular.copy($scope.diet.selectedRecipe.id));
+    }
   };
   $scope.removeIngredient = function (index) {
     delete $scope.diet.listSelectingRecipeName.splice(index, 1);
