@@ -110,7 +110,7 @@ main
       url: '/modifyRecipe/:id',
       views: {
         'menuContent': {
-          templateUrl: 'templates/modifyRecipe.html',
+          templateUrl: 'templates/ModifyRecipe.html',
           controller: 'controllerModifyRecipe'
         }
       }
