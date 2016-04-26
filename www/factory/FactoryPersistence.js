@@ -4,7 +4,17 @@ main.factory('$localstorage', function($window,$rootScope ) {
   //    $rootScope.$apply();
   //  }
   //});
+  var id = 1;
   return {
+
+    getId : function () {
+      return id;
+    },
+
+    increaseId : function () {
+      id++;
+    },
+
     set: function(key, value) {
       $window.localStorage[key] = value;
 

@@ -41,21 +41,23 @@ main.controller('controllerCreateRecipe', function ($scope, factoryRecipeList, $
   $scope.save = function (recipe) {
     if (cont == 1)
       listaRecetas = $localstorage.getObject("listMyRecipe");
+      cont = listaRecetas.length;
     if (listaRecetas == null) {
       listaRecetas = [];
     }
     listaRecetas.push({
       id: cont++,
-      title: recipe.nombre,
+      title: $scope.recipe.nombre,
       ingredientes: $scope.listIngredient,
-      description: recipe.descripcion,
-      difficulty: recipe.difficulty,
-      img:$scope.pictureUrl
+      description: $scope.recipe.descripcion,
+      difficulty: $scope.recipe.difficulty,
+      //img:$scope.pictureUrl
     });
 
     $localstorage.setObject("listMyRecipe", listaRecetas);
     cleanCreateRecipe($scope);
     $ionicViewService.nextViewOptions({disableBack: true});
+
   };
 });
 function cleanCreateRecipe($scope) {

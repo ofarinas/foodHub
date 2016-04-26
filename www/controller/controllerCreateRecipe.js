@@ -41,6 +41,7 @@ main.controller('controllerCreateRecipe', function ($scope, factoryRecipeList, $
   $scope.save = function (recipe) {
     if (cont == 1)
       listaRecetas = $localstorage.getObject("listMyRecipe");
+      cont = listaRecetas.length;
     if (listaRecetas == null) {
       listaRecetas = [];
     }
@@ -56,6 +57,7 @@ main.controller('controllerCreateRecipe', function ($scope, factoryRecipeList, $
     $localstorage.setObject("listMyRecipe", listaRecetas);
     cleanCreateRecipe($scope);
     $ionicViewService.nextViewOptions({disableBack: true});
+
   };
 });
 function cleanCreateRecipe($scope) {
