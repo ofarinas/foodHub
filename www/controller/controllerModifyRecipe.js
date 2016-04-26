@@ -44,7 +44,7 @@ main.controller('controllerModifyRecipe',  function ($scope,  $stateParams, fact
   $scope.removeIngredient = function (index) {
     delete $scope.listIngredient.splice(index, 1);
   };
-  $scope.save = function (recipe) {
+  $scope.save = function (recipe) { 
     if (cont == 1)
       listaRecetas = $localstorage.getObject("listMyRecipe");
     cont = listaRecetas.length;
