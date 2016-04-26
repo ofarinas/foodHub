@@ -66,6 +66,12 @@ main
         }
         return -1;
       },
+      findByIndex: function (index) {
+        for (var i = 0; i < list.length; i++) {
+          if (index == i) return list[i];
+        }
+        return -1;
+      },
       getRecipe: function (id) {
         var listRecipe = [];
         var recipe;

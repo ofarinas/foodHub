@@ -105,6 +105,15 @@ main
           }
         }
       })
+      .state('app.editMyDiet', {
+        url: '/editMyDiet/:index',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/createDiet.html',
+            controller: 'controllerEditDiet'
+          }
+        }
+      })
       .state('app.myRecipe', {
         url: '/myRecipe/:id',
         views: {
