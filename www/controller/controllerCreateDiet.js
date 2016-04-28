@@ -2,8 +2,8 @@
  * Created by Osvaldo on 3/21/2016.
  */
 var listDiet = [];
-var cont = 1;
 main.controller('controllerCreateDiet', function ($scope, factoryRecipeList, $localstorage, $window, $state, $ionicViewService, factoryRecipeLocalStorage, $cordovaCamera) {
+var count = -1;
   $scope.diet = {};
   $scope.diet.difficulty = 2;
   $scope.diet.listRecipe = factoryRecipeList.getRecipe();
@@ -21,13 +21,13 @@ main.controller('controllerCreateDiet', function ($scope, factoryRecipeList, $lo
     delete $scope.diet.listSelectingRecipeId.splice(index, 1);
   };
   $scope.save = function (diet) {
-    if (cont == 1)
-      listDiet = $localstorage.getObject("listDiet");
-    if (listDiet == null) {
-      listDiet = [];
-    }
+    listDiet = $localstorage.getObject("listDiet");
+    if(listDiet==null&&count==-1){
+      listDiet=[];
+      count=0;}
+    else count = listDiet.length;
     listDiet.push({
-      id: cont++,
+      id: count,
       title: diet.nombre,
       recetas: $scope.diet.listSelectingRecipeId,
       description: diet.descripcion,

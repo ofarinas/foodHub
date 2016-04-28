@@ -31,7 +31,7 @@ main.controller('controllerEditDiet', function ($scope, factoryRecipeList, $loca
       listDiet = [];
     }
     listDiet[$scope.index]={
-      id: cont++,
+      id: $scope.index,
       title: diet.nombre,
       recetas: $scope.diet.listSelectingRecipeId,
       description: diet.descripcion,
