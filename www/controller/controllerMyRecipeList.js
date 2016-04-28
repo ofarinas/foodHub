@@ -1,9 +1,13 @@
-main.controller('controllerListMyRecipe', function ($scope, $localstorage, $state,$rootScope, factoryRecipeLocalStorage) {
+main.controller('controllerListMyRecipe', function ($scope,$state ,$localstorage, $location,$rootScope, factoryRecipeLocalStorage) {
   $scope.recipes =  $localstorage.getObject("listMyRecipe");
   $scope.data = {
     showDelete: false
   };
 
+//$scope.goView=function(id1){
+//  $location.url("app.modifyRecipe");
+//  //$state.go('app.modifyRecipe',{id :id1});
+//};
   $scope.edit = function(item) {
     alert('Edit Item: ' + item.id);
   };

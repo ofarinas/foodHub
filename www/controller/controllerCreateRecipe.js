@@ -50,7 +50,7 @@ var count = -1;
       ingredientes: $scope.listIngredient,
       description: $scope.recipe.descripcion,
       difficulty: $scope.recipe.difficulty,
-      //img:$scope.pictureUrl
+      img:$scope.pictureUrl
     });
     $localstorage.setObject("listMyRecipe", listaRecetas);
     cleanCreateRecipe($scope);

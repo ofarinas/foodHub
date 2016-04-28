@@ -1,4 +1,4 @@
-<ion-view view-title="Nueva Receta">
+<ion-view view-title="New Diet">
   <ion-content class="">
     <div class="list">
       <label class="item item-input">
@@ -18,11 +18,11 @@
       <label class="input-label">Recetas</label>
       <div class="row">
         <div class="col col-75">
-          <select ng-model="diet.selectedRecipe" ng-options="value.title for value in diet.listRecipe">
+          <select style="width: 90%;" ng-model="diet.selectedRecipe" ng-options="value.title for value in diet.listRecipe">
           </select>
 
         </div>
-        <div class="col">
+        <div class="col col-offset-10">
           <button style="border-radius: 30px 30px 30px 30px;" class=" button button-calm ion-plus"
                   ng-click="addRecipe()"></button>
         </div>
