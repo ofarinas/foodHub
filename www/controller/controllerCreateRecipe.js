@@ -2,8 +2,8 @@
  * Created by Osvaldo on 3/21/2016.
  */
 var listaRecetas = [];
-var cont = 1;
 main.controller('controllerCreateRecipe', function ($scope, factoryRecipeList, $localstorage, $window, $state, $ionicViewService, factoryRecipeLocalStorage,$cordovaCamera) {
+var count = -1;
   $scope.pictureUrl="";
   //$scope.mensaje=function(){alert("hola.")};
   $scope.recipe = {};
@@ -39,21 +39,19 @@ main.controller('controllerCreateRecipe', function ($scope, factoryRecipeList, $
     delete $scope.listIngredient.splice(index, 1);
   };
   $scope.save = function (recipe) {
-    if (cont == 1)
-      listaRecetas = $localstorage.getObject("listMyRecipe");
-      cont = listaRecetas.length;
-    if (listaRecetas == null) {
-      listaRecetas = [];
-    }
+    listaRecetas = $localstorage.getObject("listMyRecipe");
+   if(listaRecetas==null&&count==-1){
+     listaRecetas=[];
+     count=0;}
+    else count = listaRecetas.length;
     listaRecetas.push({
-      id: cont++,
+      id: count,
       title: $scope.recipe.nombre,
       ingredientes: $scope.listIngredient,
       description: $scope.recipe.descripcion,
       difficulty: $scope.recipe.difficulty,
       //img:$scope.pictureUrl
     });
-
     $localstorage.setObject("listMyRecipe", listaRecetas);
     cleanCreateRecipe($scope);
     $ionicViewService.nextViewOptions({disableBack: true});
