@@ -109,7 +109,7 @@ main
         url: '/editMyDiet/:id',
         views: {
           'menuContent': {
-            templateUrl: 'templates/createDiet.html',
+            templateUrl: 'templates/modifyDiet.html',
             controller: 'controllerEditDiet'
           }
         },
@@ -130,7 +130,7 @@ main
         url: '/modifyRecipe/:id',
         views: {
           'menuContent': {
-            templateUrl: 'templates/CreateRecipe.html',
+            templateUrl: 'templates/modifyRecipe.html',
             controller: 'controllerModifyRecipe'
           }
         }

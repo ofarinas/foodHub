@@ -45,7 +45,7 @@ main.controller('controllerModifyRecipe',  function ($scope,  $stateParams, fact
       ingredientes: $scope.listIngredient,
       description: $scope.recipe.descripcion,
       difficulty: $scope.recipe.difficulty,
-      //img:$scope.pictureUrl
+      img:$scope.pictureUrl
     };
     $localstorage.setObject("listMyRecipe", listaRecetas);
     cleanCreateRecipe($scope);
@@ -57,7 +57,7 @@ main.controller('controllerModifyRecipe',  function ($scope,  $stateParams, fact
     $scope.recipe.difficulty=recipe.difficulty;
     if(recipe.ingredientes!=null)
     $scope.listIngredient=recipe.ingredientes;
-    $scope.pictureUrl="";
+    $scope.pictureUrl=recipe.img;
 
   }
 });
